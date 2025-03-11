@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.test {
+  border: 1px solid black;
+}
+
+@layer components {
+  .globalContainer {
+    @apply max-w-7xl mx-auto px-5;
+  }
+  .textRes {
+    @apply text-xs md:text-sm lg:text-base;
+  }
+  .test {
+    border: 1px solid red;
+  }
+}
