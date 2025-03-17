@@ -12,7 +12,7 @@ const MoreProduct = () => {
   return (
     <>
       <p className="py-4 text-xl">Just For You</p>
-      <div className="flex flex-col items-center justify-center">
+      <div className="flex flex-col items-center justify-center mb-6">
         <div className="grid grid-cols-6 gap-2">
           {MoreProductData.slice(0, visibleCount).map((product, idx) => (
             <ProductCard key={idx} product={product} />
@@ -20,7 +20,7 @@ const MoreProduct = () => {
         </div>
         {visibleCount < MoreProductData.length && (
           <button
-            className="border border-blue-700 justify-center my-4 py-2 px-4 text-lg"
+            className="border border-blue-700 justify-center my-4 w-[400px] py-2 px-8 text-lg text-blue-700"
             onClick={HandleClick}
           >
             LOAD MORE

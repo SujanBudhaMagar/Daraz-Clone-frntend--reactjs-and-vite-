@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 const FooterCard = ({ title, link }) => {
   return (
     <div>
-      <Link to={link}>{title}</Link>
+      <Link to={link} className="text-sm text-blue-500">
+        {title}
+      </Link>
     </div>
   );
 };

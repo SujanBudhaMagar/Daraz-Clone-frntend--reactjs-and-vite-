@@ -6,13 +6,13 @@ const Footer = () => {
     <div>
       <div className="flex justify-between globalContainer">
         <div>
-          <h1>Customer Care</h1>
+          <h1 className="text-xl text-blue-500">Customer Care</h1>
           {Link1.map((link1, idx) => (
             <FooterCard key={idx} link={link1.link} title={link1.title} />
           ))}
         </div>
         <div>
-          <h1>Daraz</h1>
+          <h1 className="text-xl text-blue-500">Daraz</h1>
           {Link2.map((link1, idx) => (
             <FooterCard key={idx} link={link1.link} title={link1.title} />
           ))}
