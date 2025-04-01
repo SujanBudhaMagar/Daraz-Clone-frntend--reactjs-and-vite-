@@ -13,10 +13,11 @@ const Product = () => {
             Shop All Products
           </button>
         </div>
-        <div className="grid grid-cols-6 gap-4 mr-4 mb-2">
+        <div className="grid grid-cols-3 md:grid-cols-6 gap-4 mr-4 mb-2">
           {ProductData.map((data, idx) => (
             <ProductCard
               key={idx}
+              id={data.id}
               img={data.img}
               name={data.name}
               price={data.price}

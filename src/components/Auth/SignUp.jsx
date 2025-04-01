@@ -15,7 +15,7 @@ const LogIn = ({ onClose }) => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [clickLogin, setClickLogin] = useState("login");
+  const [clickLogin, setClickLogin] = useState("signup");
 
   const handleLogIn = async (event) => {
     event.preventDefault();
@@ -26,7 +26,7 @@ const LogIn = ({ onClose }) => {
     }
 
     // Retrieve user data from local storage
-    const storedUser = JSON.parse(localStorage.getItem("user"));
+    const storedUser = JSON.parse(localStorage.Item("user"));
 
     if (!storedUser) {
       setError("User not found. Please sign up first.");
@@ -110,7 +110,7 @@ const LogIn = ({ onClose }) => {
       onClick={onClose} // Close when clicking outside
     >
       <div
-        className="relative bg-white rounded-lg p-6 w-[450px]"
+        className="relative bg-white rounded-lg p-6 md:w-[500px] w-[400px]"
         onClick={(e) => e.stopPropagation()} // Prevent closing when clicking inside
       >
         {/* Close Button */}
